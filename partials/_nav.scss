@@ -11,31 +11,10 @@
 @font-face {
     font-family: myFirstFont;
     src: url(sansation_light.woff);
-}
-
-//old navbar
-nav{
-
-	background-color: $brand-color;
-
-a{
-	font-family: myFirstFont;
-	color: #cccccc;
-	&:hover{
-		color: #666;
-		transition:0.5s;
-	}
-}
-
-} 
-
-.nav-pills > li.active > a{
-	background-color: transparent;
-	&:hover{
-		background-color: transparent;
-	}
 }*/
-//new navbar
+
+
+// navbar
 .navbar-default{
 background-color: $brand-color;}
 
@@ -66,13 +45,18 @@ background-color: $brand-color;}
 		transition:0.5s;
 		background-color: lighten($brand-color, 30%);
 }
-
 }
-
+.navbar-default .navbar-brand.active{
+	background-color: $brand-yellow;
+	color: darken($brand-color, 35%);
+}
 
 .navbar-toggle{
 	background-color: lighten($brand-color, 30%);
 }
+
+
+
 .dropdown-menu>li>a{
 	color: darken($brand-color, 35%);
 	&:hover {
