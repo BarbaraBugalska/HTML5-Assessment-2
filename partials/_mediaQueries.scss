@@ -1,0 +1,101 @@
+/* 	Author: Barbara Bugalska
+		Assignment: WI.2.HTML Assignment, digital Skills Academy
+		Student ID: D14126227
+		Date: 2015/04/19
+		Ref: http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+*/
+@media screen and (max-width: 769px){
+
+.navbar-default .navbar-nav .open .dropdown-menu{
+	background-color: darken($brand-color,20%);
+	li a {
+		color: lighten($brand-color, 30%);
+	}
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a{
+	background-color: $brand-yellow;
+}
+
+}
+
+
+@media screen and (max-width: 1000px){
+
+
+.flexbox .col{
+	flex: 0 0 100%;
+}
+.f1 .col:nth-child(1) { 
+  	-webkit-order: 0; 
+    -ms-flex-order: 0; 
+     order: 0;
+}
+.f1 .col:nth-child(2) { 
+  -webkit-order: 11;
+      -ms-flex-order: 11;
+          order: 11;
+}
+
+.f1 .col:nth-child(3) { 
+  	-webkit-order: 1; 
+    -ms-flex-order: 1; 
+     order: 1;
+
+}
+.f1 .col:nth-child(4) { 
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.f1 .col:nth-child(5) { 
+  	-webkit-order: 4; 
+    -ms-flex-order: 4; 
+     order: 4;
+
+}
+.f1 .col:nth-child(6) { 
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.f1 .col:nth-child(7) { 
+  	-webkit-order: 5; 
+    -ms-flex-order: 5; 
+     order: 5;
+
+}
+.f1 .col:nth-child(8) { 
+  -webkit-order: 6;
+      -ms-flex-order: 6;
+          order: 6;
+}
+.f1 .col:nth-child(9) { 
+	background-color: $brand-yellow;
+	color: darken($brand-color, 35%);
+  	-webkit-order: 8; 
+    -ms-flex-order: 8; 
+     order: 8;
+
+}
+.f1 .col:nth-child(10) { 
+  -webkit-order: 7;
+      -ms-flex-order: 7;
+          order: 7;
+}
+
+.f1 .col:nth-child(11) { 
+  	-webkit-order: 9; 
+    -ms-flex-order: 9; 
+     order: 9;
+
+}
+.f1 .col:nth-child(12) { 
+	background-color: darken($brand-color, 35%);
+	color: lighten($brand-color, 30%);
+  -webkit-order: 11;
+      -ms-flex-order: 11;
+          order: 10;
+}
+
+}

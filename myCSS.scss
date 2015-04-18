@@ -1,0 +1,38 @@
+/* 	Author: Barbara Bugalska
+		Assignment: WI.2.HTML Assignment, digital Skills Academy
+		Student ID: D14126227
+		Date: 2015/04/19
+		Ref: 
+*/
+//main.scss
+
+//variables
+
+$brand-color:#999999;
+$brand-yellow:#ffff66;
+
+//font
+@font-face {
+    font-family: mySecondFont;
+    src: url(http://www.dafont.com/gravity.font);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+}
+
+
+//Partials
+@import "partials/nav";
+@import "partials/footer";
+@import "partials/content";
+@import "partials/form";
+@import "partials/mediaQueries";
+
+img{
+	max-width: 100%;
+}
+

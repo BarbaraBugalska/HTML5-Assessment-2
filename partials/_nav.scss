@@ -1,0 +1,89 @@
+/* 	Author: Barbara Bugalska
+		Assignment: WI.2.HTML Assignment, digital Skills Academy
+		Student ID: D14126227
+		Date: 2015/04/19
+		Ref: http://getbootstrap.com/components/#nav
+*/
+
+
+
+/*
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+//old navbar
+nav{
+
+	background-color: $brand-color;
+
+a{
+	font-family: myFirstFont;
+	color: #cccccc;
+	&:hover{
+		color: #666;
+		transition:0.5s;
+	}
+}
+
+} 
+
+.nav-pills > li.active > a{
+	background-color: transparent;
+	&:hover{
+		background-color: transparent;
+	}
+}*/
+//new navbar
+.navbar-default{
+background-color: $brand-color;}
+
+
+.navbar-default .navbar-nav >li>a {
+	color: lighten($brand-color, 30%);
+	font-family: myFirstFont;
+	&:hover{
+		color: darken($brand-color, 35%);
+		transition:0.5s;
+	}
+}
+.navbar-default .navbar-nav li:hover{
+	background-color: lighten($brand-color, 30%);
+	transition:0.5s;
+	/*border-bottom: 20px solid #ffff66;*/
+}
+
+.navbar-default .navbar-nav>.active>a{
+	background-color: $brand-yellow;
+}
+.navbar-default .navbar-brand{
+	color: lighten($brand-color, 30%);
+	font-family: myFirstFont;
+
+	&:hover{
+		color: darken($brand-color, 35%);
+		transition:0.5s;
+		background-color: lighten($brand-color, 30%);
+}
+
+}
+
+
+.navbar-toggle{
+	background-color: lighten($brand-color, 30%);
+}
+.dropdown-menu>li>a{
+	color: darken($brand-color, 35%);
+	&:hover {
+		background-color: $brand-yellow;
+	}
+}
+.dropdown-menu > .active > a {
+	background-color: $brand-color;
+	&:hover{
+		background-color: $brand-yellow;
+		color:darken($brand-color, 35%);
+
+	}
+}

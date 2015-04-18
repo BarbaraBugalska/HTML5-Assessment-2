@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- 	Author: Barbara Bugalska
+		Assignment: WI.2.HTML Assignment, digital Skills Academy
+		Student ID: D14126227
+		Date: 2015/04/19
+		Ref: http://getbootstrap.com/components/#nav
+    http://getbootstrap.com/css/#grid
+    https://css-tricks.com/snippets/html/open-link-in-a-new-window/
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 	<title>Contact</title>
+
+
+	 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap -->
+    	<link href="css/bootstrap.css" rel="stylesheet">
+    	<script src="js/bootstrap.js"></script>
+
+    	<!--link to myCss-->
+    	<link rel="stylesheet" type="text/css" href="myCSS.css">
+	</head>
+
+
+	<body>
+  <header>
+		<!--Bootstrap navbar-->
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Tomasz Stanko</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        <li class="active">
+        <li class="dropdown">
+          <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">projects <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="projects.html">All projects</a></li>
+            <li class="divider"></li>
+            <li><a href="project_1.html">Tomasz Stanko New York Quartet</a></li>
+            <li><a href="project_2.html">Tomasz Stanko Quartet</a></li>
+            <li><a href="project_3.html">Tomasz Stanko Quintet</a></li>
+          </ul>
+        </li>
+
+         <li><a href="discography.html">discography</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+           <li><a href="profile.html">profile</a></li>
+           <li class="active"><a href="contact.html">contact</a></li>
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--http://getbootstrap.com/2.3.2/scaffolding.html-->
+</header>
+
+
+
+<div class="row contact">
+  <div class="col-sm-3 col-md-3 Listen">
+      <span class="glyphicon glyphicon-headphones"></span>
+    
+      
+        <p><a href="https://play.spotify.com/artist/65WFsTQhFYVqbovrVZAOd7" target="_blank">spotify></a></p>
+        <p><a href="https://www.youtube.com/watch?v=94dkiKOa6kk" target="_blank">YouTube</a></p>
+        <p><a href="http://www.discogs.com/artist/489694-Tomasz-Sta%C5%84ko" target="_blank">Discogs</a></p>
+
+  </div>
+  <div class="col-sm-6 col-md-6 KeepInTouch">
+    <span class="glyphicon glyphicon-comment"></span>
+    
+      <form>
+
+        <div class="form-group">
+        <label for="exampleInputName2">your name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+        </div>
+
+        <div class="form-group">
+        <label for="exampleInputEmail1">your email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+
+        
+
+         <div class="form-group">
+          <label for="exampleInputMessage">your message</label>
+          <textarea class="form-control" rows="3" placeholder="place your message here"></textarea>
+         </div>
+
+
+        <button type="submit" class="btn btn-default contactButton">send</button>
+      </form>
+
+    </div>
+  <div class="col-sm-3 col-md-3 BeSocial">
+    <span class="glyphicon glyphicon-eye-open"></span>
+      
+      <p><a href="https://www.facebook.com/TomaszStanko.official" target="_blank">facebook</a></p>
+      <p><a href="https://twitter.com/tomaszstanko" target="_blank">twitter</a></p>
+      <p><a href="x">LinkedIn</a></p>
+
+  </div>
+</div>
+
+  
+
+
+		<footer>
+			<div>
+				<p>Copyright © Barbara Bugalska - Digital Skills Academy 2015</p>
+			</div>
+		</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	</body>
+</html>

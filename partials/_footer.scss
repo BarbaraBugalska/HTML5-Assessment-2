@@ -1,0 +1,13 @@
+//footer
+footer{
+	background-color: $brand-color;
+	margin: 10px 0 10px 0;
+	font-family: myFirstFont;
+
+	p{
+		text-align: center;
+		padding: 5px 0 5px 0;
+		font-size: 9px;
+		color: lighten($brand-color, 30%);
+	}
+}

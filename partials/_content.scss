@@ -1,0 +1,309 @@
+/* 	Author: Barbara Bugalska
+		Assignment: WI.2.HTML Assignment, digital Skills Academy
+		Student ID: D14126227
+		Date: 2015/04/19
+		Ref: http://getbootstrap.com/components/#nav
+		http://www.w3schools.com/cssref/pr_font_weight.asp
+		http://getbootstrap.com/components/#input-groups
+		http://stackoverflow.com/questions/24960201/how-do-i-make-glyphicons-bigger-change-size
+		http://getbootstrap.com/components/#glyphicons-glyphs
+		http://demosthenes.info/blog/854/Easy-Responsive-Grid-Layout-With-Flexbox
+		http://www.w3schools.com/cssref/pr_dim_line-height.asp
+		http://demosthenes.info/blog/532/Convert-Images-To-Black-And-White-With-CSS
+*/
+//home page
+.right {
+	text-align: right;
+	padding: 10% 10% 0 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+
+//discography
+.discography {
+	margin-top: 10px;
+.caption{
+	max-width: 400px;
+	margin: 0 auto;
+}
+	h4 {
+  	font-size: 14px;
+  	font-weight: 600;
+  	margin-top: 0;
+  	margin-bottom: 0;	
+}
+p {
+  		margin-bottom: 1px;
+  	}
+  	
+  
+
+.thumbnail{
+	img{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg version='1.1' 
+		xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'>
+		<feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' />
+		</filter></svg>#greyscale");
+		&:hover {
+			-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);		}
+	}
+
+}
+}
+
+
+
+//projects
+
+
+.carousel-caption {
+	font-family: 'Open Sans', sans-serif;
+	color: lighten($brand-color, 30%);
+	font-size: 1em;
+	font-weight: 400;
+}
+//project 1, 2, 3
+.text {
+	font-family: 'Open Sans', sans-serif;
+	color: $brand-color;
+	font-size: 1em;
+	font-weight: 400;
+	text-align: left;
+	padding: 10px;
+	margin: 0 25px 0 25px;
+	max-width: 600px;
+	margin: 0 auto;
+	}
+.bottom_projects_images{
+	margin: 15px 15px 0 15px;
+}
+
+
+
+//gallery
+
+//contact
+.contact{
+	font-family: 'Open Sans', sans-serif;
+	color: $brand-color;
+	text-align: center;
+	h1{
+		font-size: 18px;
+		font-weight: 600;
+		padding-bottom: 20px
+	}
+	.glyphicon {
+		font-size: 30px;
+		color: darken($brand-color, 20%);
+		padding-bottom: 20px;
+
+}
+}
+.KeepInTouch {
+	padding: 10px 10% 20px 10%;
+}
+.Listen {
+
+	
+}
+/*.BeSocial{
+padding-right: 25px;
+}
+.Listen{
+padding-left: 25px;
+}*/ 
+/*.contact{
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+
+	flex-direction:row wrap;
+	justify-content: space-around;
+	align-items:flex-strech;
+
+	flex-wrap:wrap;
+
+
+	margin: 10px;
+	border: 1px solid #888;
+	height:500px;
+
+
+div {
+	text-align: center;
+	border-radius: 2px;
+	border: 1px solid #555;
+	padding: 20px;
+	flex: flex-shrink;
+}
+.listen {
+	flex:1;
+
+}
+.keepInTOuch{
+	flex:2;
+}
+.BeSocial{
+	flex:1;
+}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+//profile
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+//profile
+
+
+
+
+.flexbox {      
+	display: -webkit-flex;        
+  	display: -ms-flexbox;     
+  	display: flex;
+
+  	flex-flow:  -webkit-row wrap;
+  	flex-flow: -ms-row wrap;
+   	flex-flow: row wrap;
+
+   	justify-content: -webkit-space-between;
+   	justify-content: -ms-space-between;
+  	justify-content: space-between;
+}
+.flexbox .col {
+  flex: 0 0 50%;//it ensures that each .col element will be 50% of the width of its container. Produces a two column grid with no spacing.
+  line-height: 150%;
+ /* font-family: 'Open Sans', sans-serif;*/
+  p{
+  	padding: 10% 10% 10% 10%;
+  }
+  h1{
+  	padding: 5% 0 0 10%;
+  }
+  h3{
+  	padding-left: 10%;
+  }
+}
+
+
+.f1 .col:nth-child(1) { 
+  background: darken($brand-color, 35%); 
+  text-align: right;
+ 
+  	-webkit-order: 0; 
+    -ms-flex-order: 0; 
+    -moz-flex-order: 0;
+     order: 0;
+     h1, h3 {
+     	color: darken($brand-yellow, 20%);
+     	 padding-right: 10%;
+     }
+     p {
+     	color: lighten($brand-color, 30%);
+     	padding-top: 0;
+     }
+}
+.f1 .col:nth-child(2) { 
+  background: white;
+  -moz-flex-order:1;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.f1 .col:nth-child(3) { 
+    -moz-flex-order:2;
+  	-webkit-order: 2; 
+    -ms-flex-order: 2; 
+     order: 2;
+
+}
+.f1 .col:nth-child(4) { 
+  background: darken($brand-color, 35%);
+ color: lighten($brand-color, 30%);
+ -moz-flex-order:3;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.f1 .col:nth-child(5) { 
+  background: $brand-yellow;
+  color: darken($brand-color, 35%);
+  -moz-flex-order:4;
+  	-webkit-order: 4; 
+    -ms-flex-order: 4; 
+     order: 4;
+
+}
+.f1 .col:nth-child(6) { 
+  -moz-flex-order:5;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+}
+.f1 .col:nth-child(7) { 
+    -moz-flex-order:6;
+  	-webkit-order: 6; 
+    -ms-flex-order: 6; 
+     order: 6;
+
+}
+.f1 .col:nth-child(8) { 
+  background-color: darken($brand-color, 35%);
+  color: lighten($brand-color, 30%);
+  -moz-flex-order:7;
+  -webkit-order: 7;
+      -ms-flex-order: 7;
+          order: 7;
+}
+.f1 .col:nth-child(9) { 
+  background: darken($brand-color, 35%);
+  color: $brand-yellow; 
+  -moz-flex-order:8;
+  	-webkit-order: 8; 
+    -ms-flex-order: 8; 
+     order: 8;
+
+}
+.f1 .col:nth-child(10) { 
+  -moz-flex-order:9;
+  -webkit-order: 9;
+      -ms-flex-order: 9;
+          order: 9;
+}
+
+.f1 .col:nth-child(11) { 
+  -moz-flex-order:10;
+  	-webkit-order: 10; 
+    -ms-flex-order: 10; 
+     order: 10;
+
+}
+.f1 .col:nth-child(12) { 
+  background: $brand-yellow;
+  color: darken($brand-color, 35%);
+  -webkit-order: 11;
+      -ms-flex-order: 11;
+          order: 11;
+}
+
+
+
+.flexbox .f1{ //do I need it?
+	clear: both;
+}
