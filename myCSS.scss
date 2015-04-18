@@ -7,10 +7,11 @@
 //main.scss
 
 //variables
-// Gabriel is Here 
 
 $brand-color:#999999;
 $brand-yellow:#ffff66;
+
+
 
 //font
 @font-face {
@@ -24,6 +25,8 @@ $brand-yellow:#ffff66;
     src: url(sansation_bold.woff);
     font-weight: bold;
 }
+
+//mixins
 
 
 //Partials
