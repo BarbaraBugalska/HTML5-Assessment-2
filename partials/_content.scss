@@ -184,6 +184,9 @@ div {
    	justify-content: -webkit-space-between;
    	justify-content: -ms-space-between;
   	justify-content: space-between;
+    img{
+      width: 100%;
+    }
 }
 .flexbox .col {
   flex: 0 0 50%;//it ensures that each .col element will be 50% of the width of its container. Produces a two column grid with no spacing.

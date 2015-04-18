@@ -226,6 +226,8 @@ div {
   justify-content: -webkit-space-between;
   justify-content: -ms-space-between;
   justify-content: space-between; }
+  .flexbox img {
+    width: 100%; }
 
 .flexbox .col {
   flex: 0 0 50%;
