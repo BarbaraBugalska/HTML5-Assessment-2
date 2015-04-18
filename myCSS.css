@@ -35,8 +35,7 @@
 
 .navbar-default .navbar-nav li:hover {
   background-color: #e6e6e6;
-  transition: 0.5s;
-  /*border-bottom: 20px solid #ffff66;*/ }
+  transition: 0.5s; }
 
 .navbar-default .navbar-nav > .active > a {
   background-color: #ffff66; }
@@ -346,9 +345,6 @@ div {
   -ms-flex-order: 11;
   order: 11; }
 
-.flexbox .f1 {
-  clear: both; }
-
 /* 	Author: Barbara Bugalska
 		Assignment: WI.2.HTML Assignment, digital Skills Academy
 		Student ID: D14126227
@@ -368,7 +364,7 @@ label {
   border-right: 0;
   border-radius: 0; }
   .form-control:focus {
-    border-color: #ccc;
+    border-color: #999999;
     box-shadow: 0 0 5px #ffff33; }
 
 .btn, .contactButton {
@@ -377,7 +373,7 @@ label {
   .btn:hover, .contactButton:hover {
     background-color: #ffff66; }
   .btn:focus, .contactButton:focus {
-    border-color: #ccc;
+    border-color: #999999;
     box-shadow: 0 0 5px #ffff33; }
 
 /* 	Author: Barbara Bugalska

@@ -30,7 +30,7 @@ background-color: $brand-color;}
 .navbar-default .navbar-nav li:hover{
 	background-color: lighten($brand-color, 30%);
 	transition:0.5s;
-	/*border-bottom: 20px solid #ffff66;*/
+	
 }
 
 .navbar-default .navbar-nav>.active>a{

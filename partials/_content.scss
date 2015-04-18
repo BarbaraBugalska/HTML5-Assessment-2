@@ -231,7 +231,9 @@ div {
    	justify-content: -webkit-space-between;
    	justify-content: -ms-space-between;
   	justify-content: space-between;
+
     img{
+      //fexbox images working on firefox
       width: 100%;
     }
 }
@@ -354,6 +356,3 @@ div {
 
 
 
-.flexbox .f1{ //do I need it?
-	clear: both;
-}
