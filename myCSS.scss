@@ -16,8 +16,10 @@ body{
     //font-family: 'Open Sans', sans-serif;
     // font-family: Helvetica, sans-serif;
     font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
-    background: $brand-color;
+    background: white;
+    padding: 0;
 }
+
 nav, footer{
     font-family: 'Droid Serif', Georgia, Times, serif;
 }
