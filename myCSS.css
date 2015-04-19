@@ -109,7 +109,8 @@ footer {
       color: #e6e6e6; }
 
 .discography {
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-left: 15px; }
   .discography .caption {
     max-width: 400px;
     margin: 0 auto; }
