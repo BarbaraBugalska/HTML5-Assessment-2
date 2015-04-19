@@ -17,7 +17,9 @@
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 	<title>Thank You</title>
 
-	 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	 	<!--Google fonts link -->
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.css" rel="stylesheet">
@@ -108,17 +110,21 @@
     $(document).ready(function(){
       
       // ---- Animate effect for dropdown menu
+      //---https://api.jquery.com/click/
       $(".dropdown-toggle").click(function(){
-       
-        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
+       //---http://api.jquery.com/css/
+        if($(".navbar-toggle").css("display") === "none")  // disable on mobile
         {
+          //---http://api.jquery.com/toggle/
           $(".dropdown-menu").toggle( 400 );
         }
        });
       //---------------------
+
+      //---http://api.jquery.com/fadein/
+      $("#page").fadeIn("slow");
     });
      </script>
-
      
 	</body>
 </html>

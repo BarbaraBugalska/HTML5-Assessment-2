@@ -2,7 +2,8 @@
 		Assignment: WI.2.HTML Assignment, digital Skills Academy
 		Student ID: D14126227
 		Date: 2015/04/19
-		Ref: 
+		Ref: http://sass-lang.com/guide
+        http://www.google.com/fonts   
 */
 body {
   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
@@ -68,6 +69,13 @@ img {
     background-color: #ffff66;
     color: #404040; }
 
+/* 	Author: Barbara Bugalska
+		Assignment: WI.2.HTML Assignment, digital Skills Academy
+		Student ID: D14126227
+		Date: 2015/04/19
+		
+
+*/
 footer {
   background-color: #999999;
   margin-top: 15px;
