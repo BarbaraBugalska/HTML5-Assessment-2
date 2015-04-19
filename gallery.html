@@ -18,194 +18,182 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
- 
     <!--link to myCss-->
    	<link rel="stylesheet" type="text/css" href="myCSS.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.6/css/swiper.min.css">
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?ver=4.1'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.6/css/swiper.min.css">
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js?ver=4.1'></script>
 
-<script src="/scripts/modernizr.js"></script>
+    <script src="/scripts/modernizr.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.6/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.6/js/swiper.min.js"></script>
   </head>
+
   <body>
   	<header>
+      <!--Bootstrap navbar-->
+      <nav class="navbar navbar-default ">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="index.html">Tomasz Stanko</a>
+        </div>
 
-<!--Bootstrap navbar-->
-<nav class="navbar navbar-default ">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Tomasz Stanko</a>
-    </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+            <li class="dropdown">
+              <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">projects <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="projects.html">All projects</a></li>
+              <li class="divider"></li>
+              <li><a href="project_1.html">Tomasz Stanko New York Quartet</a></li>
+              <li><a href="project_2.html">Tomasz Stanko Quartet</a></li>
+              <li><a href="project_3.html">Tomasz Stanko Quintet</a></li>
+            </ul>
+            </li>
+            <li><a href="discography.html">discography</a></li>
+            <li class="active"><a href="gallery.html">gallery</a></li>
+            <li><a href="profile.html">profile</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>     
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav">
-        <li class="active">
-        <li class="dropdown">
-          <a href="projects.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">projects <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="projects.html">All projects</a></li>
-            <li class="divider"></li>
-            <li><a href="project_1.html">Tomasz Stanko New York Quartet</a></li>
-            <li><a href="project_2.html">Tomasz Stanko Quartet</a></li>
-            <li><a href="project_3.html">Tomasz Stanko Quintet</a></li>
-          </ul>
-        </li>
-
-         <li><a href="discography.html">discography</a></li>
-          <li class="active"><a href="gallery.html">gallery</a></li>
-           <li><a href="profile.html">profile</a></li>
-           <li><a href="contact.html">contact</a></li>
-      </ul>
-     
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-</header>
-
-
-
-
- <!-- Slider main container -->
-<div id="gallery" class="swiper-container gallery-top">
+  <!-- Slider main container -->
+  <div id="gallery" class="swiper-container gallery-top">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_1.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/gallery/Tomasz_Stanko_2.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/gallery/Tomasz_Stanko_3.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_4.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_5.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_6.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_7.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_8.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_9.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_10.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_11.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_12.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_13.jpg" alt="Tomasz" />
-                </div>
-                <div class="swiper-slide">
-                 <img src="img/gallery/Tomasz_Stanko_14.jpg" alt="Tomasz" />
-                </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_1.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_2.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_3.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_4.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_5.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_6.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_7.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_8.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_9.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_10.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_11.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_12.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_13.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/gallery/Tomasz_Stanko_14.jpg" alt="Tomasz" />
+        </div>
     </div>
-           <!-- Add Arrows -->
+    <!-- Add Arrows -->
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
-</div>
-<div class="swiper-container gallery-thumbs">
-       <div class="swiper-wrapper">
-             <div class="swiper-slide">
-               <img src="img/gallery/gallery_mini/Tomasz_Stanko_1.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-              <img src="img/gallery/gallery_mini/Tomasz_Stanko_2.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_3.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_4.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_5.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_6.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_7.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_8.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_9.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_10.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_11.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_12.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_13.jpg" alt="Tomasz" />
-             </div>
-             <div class="swiper-slide">
-             <img src="img/gallery/gallery_mini/Tomasz_Stanko_14.jpg" alt="Tomasz" />
-             </div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/gallery/gallery_mini/Tomasz_Stanko_1.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_2.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_3.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_4.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_5.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_6.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_7.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_8.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_9.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_10.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_11.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_12.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_13.jpg" alt="Tomasz" />
+        </div>
+        <div class="swiper-slide">
+        <img src="img/gallery/gallery_mini/Tomasz_Stanko_14.jpg" alt="Tomasz" />
+        </div>
+      </div>
+    </div>
 
-       </div>
-</div>
+    <!-- Scripts -->
+    <script>
+    // ---- Swiper Script
+    // http://www.idangero.us/swiper/
+    // Settings http://www.idangero.us/swiper/api/#.VTOtVSFVhHx
+    $(document).ready(function () {
+    var galleryTop = new Swiper('.gallery-top', {
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          // loop: true
+          //spaceBetween: 10,
+      });
 
-<!-- Scripts -->
-
-<script>
-// ---- Swiper Script
-// http://www.idangero.us/swiper/
-// Settings http://www.idangero.us/swiper/api/#.VTOtVSFVhHx
-$(document).ready(function () {
-var galleryTop = new Swiper('.gallery-top', {
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      // loop: true
-      //spaceBetween: 10,
-  });
-
-  var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 5,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      touchRatio: 0.2,
-      
-     // slideToClickedSlide: true
-  });
-  galleryTop.params.control = galleryThumbs;
-  galleryThumbs.params.control = galleryTop;
-});
-
-</script>
+      var galleryThumbs = new Swiper('.gallery-thumbs', {
+          spaceBetween: 5,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          touchRatio: 0.2,
+          
+         // slideToClickedSlide: true
+      });
+      galleryTop.params.control = galleryThumbs;
+      galleryThumbs.params.control = galleryTop;
+    });
+    </script>
  
-
     <footer>
       <div>
         <p>Copyright © Barbara Bugalska - Digital Skills Academy 2015</p>
@@ -228,7 +216,10 @@ var galleryTop = new Swiper('.gallery-top', {
         }
        });
       //---------------------
-    });
+      //----content page fade in slowly
+       $("#page").fadeIn("slow");
+       //-------------------
+      });
      </script>
   </body>
 </html>
