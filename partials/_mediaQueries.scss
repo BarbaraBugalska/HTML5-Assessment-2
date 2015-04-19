@@ -15,14 +15,19 @@
 		color: lighten($brand-color, 30%);
 	}
 }
-
+.contact, #home{
+   margin-bottom: 25px;
+}
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a{
 	background-color: $brand-yellow;
 }
-
 }
-
 //----------
+@media screen and (max-width: 769px){
+  .flexbox .col>p{
+    font-size:14px; 
+  }
+}
 
 
 @media screen and (max-width: 1000px){

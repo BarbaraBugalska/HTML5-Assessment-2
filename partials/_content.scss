@@ -20,26 +20,29 @@
 
   .rightP {
     padding: 20px 0 0 40px;
+    color: $brand-color;
     
   }
   .rightH {
-    background-color: darken($brand-color, 30%);
-      margin-left: 20%;
-      padding: 5px 20px 5px 0;
+   // background-color: darken($brand-color, 30%);
+     // margin-left: 20%;
+      //padding: 5px 20px 5px 0;
   
   h1 {
     font-size: 40px;
-    color:darken($brand-yellow, 20%);
+    color:darken($brand-color, 30%);
     margin-top: 5px;
 
   }
   h3{
   margin-bottom: 5px;
-   color: lighten($brand-color, 30%);
+   color: darken($brand-color, 10%);
   }
 }
 }
-
+#home{
+  margin-bottom: 170px;
+}
 
 //discography page
 .discography {
@@ -180,11 +183,8 @@ p {
 
 
 
-//profile
-/*font-family: 'Open Sans Condensed', sans-serif;*/
-//profile
 
-
+//profile
 
 
 .flexbox {      
@@ -210,13 +210,14 @@ p {
   line-height: 150%;
   p{
   	padding: 10% 10% 10% 10%;
-    font-size: 18px;
+    font-size: 15px;
   }
   h1{
   	padding: 5% 0 0 10%;
   }
   h3{
   	padding-left: 10%;
+    font-size: 18px
   }
 }
 
