@@ -4,31 +4,20 @@
 		Date: 2015/04/19
 		Ref: 
 */
-@font-face {
-  font-family: mySecondFont;
-  src: url(http://www.dafont.com/gravity.font);
-  font-weight: bold; }
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_bold.woff);
-  font-weight: bold; }
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 /* 	Author: Barbara Bugalska
 		Assignment: WI.2.HTML Assignment, digital Skills Academy
 		Student ID: D14126227
 		Date: 2015/04/19
 		Ref: http://getbootstrap.com/components/#nav
 */
-/*
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}*/
 .navbar-default {
   background-color: #999999; }
 
 .navbar-default .navbar-nav > li > a {
-  color: #e6e6e6;
-  font-family: myFirstFont; }
+  color: #e6e6e6; }
   .navbar-default .navbar-nav > li > a:hover {
     color: #404040;
     transition: 0.5s; }
@@ -41,8 +30,7 @@
   background-color: #ffff66; }
 
 .navbar-default .navbar-brand {
-  color: #e6e6e6;
-  font-family: myFirstFont; }
+  color: #e6e6e6; }
   .navbar-default .navbar-brand:hover {
     color: #404040;
     transition: 0.5s;
@@ -68,8 +56,7 @@
 
 footer {
   background-color: #999999;
-  margin: 10px 0 10px 0;
-  font-family: myFirstFont; }
+  margin: 10px 0 10px 0; }
   footer p {
     text-align: center;
     padding: 5px 0 5px 0;

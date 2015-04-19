@@ -7,13 +7,6 @@
 
 
 
-/*
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}*/
-
-
 // navbar
 .navbar-default{
 background-color: $brand-color;}
@@ -21,7 +14,6 @@ background-color: $brand-color;}
 
 .navbar-default .navbar-nav >li>a {
 	color: lighten($brand-color, 30%);
-	font-family: myFirstFont;
 	&:hover{
 		color: darken($brand-color, 35%);
 		transition:0.5s;
@@ -38,7 +30,7 @@ background-color: $brand-color;}
 }
 .navbar-default .navbar-brand{
 	color: lighten($brand-color, 30%);
-	font-family: myFirstFont;
+	
 
 	&:hover{
 		color: darken($brand-color, 35%);

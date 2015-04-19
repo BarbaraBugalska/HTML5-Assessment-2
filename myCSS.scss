@@ -13,17 +13,9 @@ $brand-yellow:#ffff66;
 
 
 
-//font
-@font-face {
-    font-family: mySecondFont;
-    src: url(http://www.dafont.com/gravity.font);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_bold.woff);
-    font-weight: bold;
+body{
+    font-family: 'Open Sans', sans-serif;
+    // font-family: Helvetica, sans-serif;
 }
 
 //mixins
