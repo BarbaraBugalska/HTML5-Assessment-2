@@ -70,6 +70,7 @@
     </nav>
   </header>
 
+  <div id="page">
   <!-- Slider main container -->
   <div id="gallery" class="swiper-container gallery-top">
     <!-- Additional required wrapper -->
@@ -168,13 +169,24 @@
       </div>
     </div>
 
-    <!-- Scripts -->
+ 
+    <footer>
+      <div>
+        <p>Copyright © Barbara Bugalska - Digital Skills Academy 2015</p>
+      </div>
+    </footer>
+  </div> 
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
     <script>
+
     // ---- Swiper Script
     // http://www.idangero.us/swiper/
     // Settings http://www.idangero.us/swiper/api/#.VTOtVSFVhHx
-    $(document).ready(function () {
-    var galleryTop = new Swiper('.gallery-top', {
+      function myGallery() {
+          var galleryTop = new Swiper('.gallery-top', {
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
           // loop: true
@@ -191,34 +203,30 @@
       });
       galleryTop.params.control = galleryThumbs;
       galleryThumbs.params.control = galleryTop;
-    });
-    </script>
- 
-    <footer>
-      <div>
-        <p>Copyright © Barbara Bugalska - Digital Skills Academy 2015</p>
-      </div>
-    </footer>
+      }
 
-   
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <script>
+
     $(document).ready(function(){
+       
+       //----content page fade in slowly
+        $("#page").fadeIn("slow");
+        //-------------------
+
+        myGallery();
       
       // ---- Animate effect for dropdown menu
       $(".dropdown-toggle").click(function(){
-       
-        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
+      
+      if($(".navbar-toggle").css("display") === "none")  // diable on mobile
         {
           $(".dropdown-menu").toggle( 400 );
         }
        });
       //---------------------
-      //----content page fade in slowly
-       $("#page").fadeIn("slow");
-       //-------------------
+     
+      
+       
       });
      </script>
   </body>
