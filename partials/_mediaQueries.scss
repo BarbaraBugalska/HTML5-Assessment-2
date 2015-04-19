@@ -18,12 +18,14 @@
 .contact, #home{
    margin-bottom: 25px;
 }
+.right{
+  font-size: 14px;
+}
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a{
 	background-color: $brand-yellow;
 }
-}
-//----------
-@media screen and (max-width: 769px){
+//-----
+
   .flexbox .col>p{
     font-size:14px; 
   }
