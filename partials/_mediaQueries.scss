@@ -101,11 +101,11 @@
 }
 //bug fix: Flip content disapearing on smaller screen size
 @media screen and (max-width: 991px){
-.disco { min-height: 511px; }
+.disco { min-height: 470px; }
 }
 
 @media screen and (max-width: 415px){
-.disco { min-height: 125vw; }
+.disco { min-height: 110vw; }
 }
 
 @media screen and (max-width: 230px){

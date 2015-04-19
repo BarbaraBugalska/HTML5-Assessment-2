@@ -136,6 +136,11 @@ footer {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
 
+.back .backContent {
+  padding-left: 10px;
+  max-width: 400px;
+  margin: 0 auto; }
+
 .carousel-caption {
   font-family: 'Open Sans', sans-serif;
   color: #e6e6e6;
@@ -480,10 +485,10 @@ label {
     order: 10; } }
 @media screen and (max-width: 991px) {
   .disco {
-    min-height: 511px; } }
+    min-height: 470px; } }
 @media screen and (max-width: 415px) {
   .disco {
-    min-height: 125vw; } }
+    min-height: 110vw; } }
 @media screen and (max-width: 230px) {
   .disco {
     min-height: 135vw; } }
