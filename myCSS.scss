@@ -11,15 +11,27 @@
 $brand-color:#999999;
 $brand-yellow:#ffff66;
 
-
-
+//fonts
 body{
     font-family: 'Open Sans', sans-serif;
     // font-family: Helvetica, sans-serif;
 }
 
 //mixins
-
+@mixin flex($order){
+    -moz-flex-order:$order;
+    -webkit-order: $order;
+    -ms-flex-order: $order;
+          order: $order;
+}
+//img
+img{
+    max-width: 100%;
+}
+//-----
+#page {
+  display: none;
+}
 
 //Partials
 @import "partials/nav";
@@ -28,8 +40,5 @@ body{
 @import "partials/form";
 @import "partials/mediaQueries";
 
-img{
-	max-width: 100%;
 
-}
 

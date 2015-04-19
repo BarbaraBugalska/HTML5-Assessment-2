@@ -12,16 +12,15 @@
 		http://demosthenes.info/blog/532/Convert-Images-To-Black-And-White-With-CSS
 */
 //home page
-#page {
-  display: none;
-}
+
 .right {
 	text-align: right;
 	padding: 10% 10% 0 0;
-	font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+
   .rightP {
     padding: 20px 0 0 40px;
+    
   }
   .rightH {
     background-color: darken($brand-color, 30%);
@@ -42,7 +41,7 @@
 }
 
 
-//discography
+//discography page
 .discography {
 	margin-top: 10px;
   margin-left: 15px;
@@ -59,7 +58,7 @@
 p {
   		margin-bottom: 1px;
   	}
-  	
+ //----styles for flip jQuery plugin	
 .front {
   width: 100%!important;
   height: 100%!important;
@@ -70,6 +69,17 @@ p {
   height: 100%;
 }
 
+.back {
+  .backContent {
+    padding-left: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+//-------------
+
+
+//---http://demosthenes.info/blog/532/Convert-Images-To-Black-And-White-With-CSS
 .thumbnail{
 	img{
 	-webkit-filter: grayscale(100%);
@@ -83,37 +93,25 @@ p {
 			-webkit-filter: grayscale(0%);
 		filter: grayscale(0%);		}
 	}
-
 }
 }
-.back {
-  .backContent {
-    padding-left: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+//------------------------------------
 
 
-}
 
-//projects
-
-
-.carousel-caption {
-	font-family: 'Open Sans', sans-serif;
+//projects page
+.carousel-caption {	
 	color: lighten($brand-color, 30%);
 	font-size: 1em;
 	font-weight: 400;
 }
 //project 1, 2, 3
 .text {
-	font-family: 'Open Sans', sans-serif;
 	color: $brand-color;
 	font-size: 1em;
 	font-weight: 400;
 	text-align: left;
 	padding: 10px;
-	margin: 0 25px 0 25px;
 	max-width: 600px;
 	margin: 0 auto;
 	}
@@ -123,48 +121,43 @@ p {
 
 
 
-//gallery
+//gallery page
+//----main display
 #gallery {
-  /*width: 100%;
-  max-height: 700px;*/
   max-width: 100%;
   max-height: 80%;
   height: auto;
 
-
-
-  
-    //.gallery-top {
-      //  max-height: 80%;
-      //  width: 100%;
-        .swiper-wrapper{
-           height: 100%;
-          .swiper-slide{
-              background-color: black;
-              text-align: center;
-              height: 100%;
-                img{
-                  max-height: 100%;
-                  width: auto;
-                  margin: 0 auto;
+.swiper-wrapper{
+    height: 100%;
+  .swiper-slide{
+    background-color: black;
+    text-align: center;
+    height: 100%;
+      img{
+      max-height: 100%;
+      width: auto;
+      margin: 0 auto;
                 }
           }
       }
     }
+//--------------
 
+//----thumbnails
     .gallery-thumbs {
       
-        box-sizing: border-box;
-        padding: 10px 0;
-         max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+   max-width: 100%;
   max-height: 80%;
   height: auto;
 
-        img{
-                  height: 50%;
-                  width: auto;
-                  margin: 0 auto;
-                }
+  img{
+    height: 50%;
+    width: auto;
+    margin: 0 auto;
+    }
    .swiper-wrapper{
     max-height: 100%;
    }
@@ -179,48 +172,7 @@ p {
     }
 
 }
-
-
-
-//contact
-.contact{
-	font-family: 'Open Sans', sans-serif;
-	color: $brand-color;
-	text-align: center;
-	h1{
-		font-size: 18px;
-		font-weight: 600;
-		padding-bottom: 20px
-	}
-	.glyphicon, .fa-users{
-		font-size: 30px;
-		color: darken($brand-color, 20%);
-		padding-bottom: 20px;
-    padding-top: 20px;
-
-}
-  .fa-spotify, .fa-youtube-square, .fa-facebook-official, .fa-twitter-square{
-    font-size: 40px;
-    color: $brand-color;
-    padding: 10px;
-    &:hover{
-      color: $brand-yellow;
-      background-color: $brand-color;
-    }
-  }
-}
-.KeepInTouch {
-	padding: 10px 10% 20px 10%;
-  background-color: lighten($brand-color, 35%);
-}
-.Listen {
-
-
-}
-
-
-
-
+//--------------
 
 
 
@@ -256,9 +208,9 @@ p {
 .flexbox .col {
   flex: 0 0 50%;//it ensures that each .col element will be 50% of the width of its container. Produces a two column grid with no spacing.
   line-height: 150%;
- /* font-family: 'Open Sans', sans-serif;*/
   p{
   	padding: 10% 10% 10% 10%;
+    font-size: 18px;
   }
   h1{
   	padding: 5% 0 0 10%;
@@ -273,10 +225,7 @@ p {
   background: darken($brand-color, 35%); 
   text-align: right;
  
-  	-webkit-order: 0; 
-    -ms-flex-order: 0; 
-    -moz-flex-order: 0;
-     order: 0;
+   @include flex(0);
      h1, h3 {
      	color: darken($brand-yellow, 20%);
      	 padding-right: 10%;
@@ -288,87 +237,90 @@ p {
 }
 .f1 .col:nth-child(2) { 
   background: white;
-  -moz-flex-order:1;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
+  @include flex(1);
 }
 
 .f1 .col:nth-child(3) { 
-    -moz-flex-order:2;
-  	-webkit-order: 2; 
-    -ms-flex-order: 2; 
-     order: 2;
+     @include flex(2);
 
 }
 .f1 .col:nth-child(4) { 
   background: darken($brand-color, 35%);
  color: lighten($brand-color, 30%);
- -moz-flex-order:3;
-  -webkit-order: 3;
-      -ms-flex-order: 3;
-          order: 3;
+ @include flex(3);
 }
 .f1 .col:nth-child(5) { 
   background: $brand-yellow;
   color: darken($brand-color, 35%);
-  -moz-flex-order:4;
-  	-webkit-order: 4; 
-    -ms-flex-order: 4; 
-     order: 4;
+  @include flex(4);
 
 }
 .f1 .col:nth-child(6) { 
-  -moz-flex-order:5;
-  -webkit-order: 5;
-      -ms-flex-order: 5;
-          order: 5;
+ @include flex(5);
 }
 .f1 .col:nth-child(7) { 
-    -moz-flex-order:6;
-  	-webkit-order: 6; 
-    -ms-flex-order: 6; 
-     order: 6;
+ @include flex(6);
 
 }
 .f1 .col:nth-child(8) { 
   background-color: darken($brand-color, 35%);
   color: lighten($brand-color, 30%);
-  -moz-flex-order:7;
-  -webkit-order: 7;
-      -ms-flex-order: 7;
-          order: 7;
+   @include flex(7);
 }
 .f1 .col:nth-child(9) { 
   background: darken($brand-color, 35%);
   color: $brand-yellow; 
-  -moz-flex-order:8;
-  	-webkit-order: 8; 
-    -ms-flex-order: 8; 
-     order: 8;
+  @include flex(8);
 
 }
 .f1 .col:nth-child(10) { 
-  -moz-flex-order:9;
-  -webkit-order: 9;
-      -ms-flex-order: 9;
-          order: 9;
+ @include flex(9);
 }
 
 .f1 .col:nth-child(11) { 
-  -moz-flex-order:10;
-  	-webkit-order: 10; 
-    -ms-flex-order: 10; 
-     order: 10;
+ @include flex(10);
 
 }
 .f1 .col:nth-child(12) { 
   background: $brand-yellow;
   color: darken($brand-color, 35%);
-  -webkit-order: 11;
-      -ms-flex-order: 11;
-          order: 11;
+  @include flex(11);
 }
 
 
 
+
+//contact page
+.contact{
+  margin-bottom: 170px;
+  color: $brand-color;
+  text-align: center;
+  h1{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 20px
+  }
+  .glyphicon, .fa-users{
+    font-size: 30px;
+    color: darken($brand-color, 20%);
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+  .fa-spotify, .fa-youtube-square, .fa-facebook-official, .fa-twitter-square{
+    font-size: 40px;
+    color: $brand-color;
+    padding: 10px;
+    &:hover{
+      color: $brand-yellow;
+      background-color: $brand-color;
+    }
+  }
+}
+.KeepInTouch {
+  padding: 10px 10% 20px 10%;
+  background-color: lighten($brand-color, 35%);
+  hr{
+    border-color: $brand-color;
+  }
+}

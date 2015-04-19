@@ -7,6 +7,12 @@
 body {
   font-family: 'Open Sans', sans-serif; }
 
+img {
+  max-width: 100%; }
+
+#page {
+  display: none; }
+
 /* 	Author: Barbara Bugalska
 		Assignment: WI.2.HTML Assignment, digital Skills Academy
 		Student ID: D14126227
@@ -14,8 +20,7 @@ body {
 		Ref: http://getbootstrap.com/components/#nav
 */
 .navbar-default {
-  background-color: #999999;
-  font-family: serif; }
+  background-color: #999999; }
 
 .navbar-default .navbar-nav > li > a {
   color: #e6e6e6; }
@@ -57,7 +62,8 @@ body {
 
 footer {
   background-color: #999999;
-  margin: 10px 0 10px 0; }
+  margin-top: 15px;
+  padding: 30px 0; }
   footer p {
     text-align: center;
     padding: 5px 0 5px 0;
@@ -77,13 +83,9 @@ footer {
 		http://www.w3schools.com/cssref/pr_dim_line-height.asp
 		http://demosthenes.info/blog/532/Convert-Images-To-Black-And-White-With-CSS
 */
-#page {
-  display: none; }
-
 .right {
   text-align: right;
   padding: 10% 10% 0 0;
-  font-family: 'Open Sans', sans-serif;
   font-size: 20px; }
   .right .rightP {
     padding: 20px 0 0 40px; }
@@ -118,6 +120,10 @@ footer {
   .discography .disco {
     overflow: visible;
     height: 100%; }
+  .discography .back .backContent {
+    padding-left: 10px;
+    max-width: 400px;
+    margin: 0 auto; }
   .discography .thumbnail img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -127,25 +133,17 @@ footer {
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
 
-.back .backContent {
-  padding-left: 10px;
-  max-width: 400px;
-  margin: 0 auto; }
-
 .carousel-caption {
-  font-family: 'Open Sans', sans-serif;
   color: #e6e6e6;
   font-size: 1em;
   font-weight: 400; }
 
 .text {
-  font-family: 'Open Sans', sans-serif;
   color: #999999;
   font-size: 1em;
   font-weight: 400;
   text-align: left;
   padding: 10px;
-  margin: 0 25px 0 25px;
   max-width: 600px;
   margin: 0 auto; }
 
@@ -153,8 +151,6 @@ footer {
   margin: 15px 15px 0 15px; }
 
 #gallery {
-  /*width: 100%;
-  max-height: 700px;*/
   max-width: 100%;
   max-height: 80%;
   height: auto; }
@@ -188,31 +184,6 @@ footer {
   .gallery-thumbs .swiper-slide-active {
     opacity: 1; }
 
-.contact {
-  font-family: 'Open Sans', sans-serif;
-  color: #999999;
-  text-align: center; }
-  .contact h1 {
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 20px; }
-  .contact .glyphicon, .contact .fa-users {
-    font-size: 30px;
-    color: #666666;
-    padding-bottom: 20px;
-    padding-top: 20px; }
-  .contact .fa-spotify, .contact .fa-youtube-square, .contact .fa-facebook-official, .contact .fa-twitter-square {
-    font-size: 40px;
-    color: #999999;
-    padding: 10px; }
-    .contact .fa-spotify:hover, .contact .fa-youtube-square:hover, .contact .fa-facebook-official:hover, .contact .fa-twitter-square:hover {
-      color: #ffff66;
-      background-color: #999999; }
-
-.KeepInTouch {
-  padding: 10px 10% 20px 10%;
-  background-color: #f2f2f2; }
-
 /*font-family: 'Open Sans Condensed', sans-serif;*/
 .flexbox {
   display: -webkit-flex;
@@ -229,10 +200,10 @@ footer {
 
 .flexbox .col {
   flex: 0 0 50%;
-  line-height: 150%;
-  /* font-family: 'Open Sans', sans-serif;*/ }
+  line-height: 150%; }
   .flexbox .col p {
-    padding: 10% 10% 10% 10%; }
+    padding: 10% 10% 10% 10%;
+    font-size: 18px; }
   .flexbox .col h1 {
     padding: 5% 0 0 10%; }
   .flexbox .col h3 {
@@ -241,9 +212,9 @@ footer {
 .f1 .col:nth-child(1) {
   background: #404040;
   text-align: right;
+  -moz-flex-order: 0;
   -webkit-order: 0;
   -ms-flex-order: 0;
-  -moz-flex-order: 0;
   order: 0; }
   .f1 .col:nth-child(1) h1, .f1 .col:nth-child(1) h3 {
     color: yellow;
@@ -324,9 +295,37 @@ footer {
 .f1 .col:nth-child(12) {
   background: #ffff66;
   color: #404040;
+  -moz-flex-order: 11;
   -webkit-order: 11;
   -ms-flex-order: 11;
   order: 11; }
+
+.contact {
+  margin-bottom: 170px;
+  color: #999999;
+  text-align: center; }
+  .contact h1 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 20px; }
+  .contact .glyphicon, .contact .fa-users {
+    font-size: 30px;
+    color: #666666;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .contact .fa-spotify, .contact .fa-youtube-square, .contact .fa-facebook-official, .contact .fa-twitter-square {
+    font-size: 40px;
+    color: #999999;
+    padding: 10px; }
+    .contact .fa-spotify:hover, .contact .fa-youtube-square:hover, .contact .fa-facebook-official:hover, .contact .fa-twitter-square:hover {
+      color: #ffff66;
+      background-color: #999999; }
+
+.KeepInTouch {
+  padding: 10px 10% 20px 10%;
+  background-color: #f2f2f2; }
+  .KeepInTouch hr {
+    border-color: #999999; }
 
 /* 	Author: Barbara Bugalska
 		Assignment: WI.2.HTML Assignment, digital Skills Academy
@@ -350,12 +349,13 @@ label {
     border-color: #999999;
     box-shadow: 0 0 5px #ffff33; }
 
-.btn, .contactButton {
+.contactButton {
   font-weight: bold;
-  padding: 6px 30px; }
-  .btn:hover, .contactButton:hover {
-    background-color: #ffff66; }
-  .btn:focus, .contactButton:focus {
+  padding: 6px 30px;
+  background-color: #ffff66; }
+  .contactButton:hover {
+    background-color: yellow; }
+  .contactButton:focus {
     border-color: #999999;
     box-shadow: 0 0 5px #ffff33; }
 
@@ -378,41 +378,49 @@ label {
     flex: 0 0 100%; }
 
   .f1 .col:nth-child(1) {
+    -moz-flex-order: 0;
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0; }
 
   .f1 .col:nth-child(2) {
+    -moz-flex-order: 11;
     -webkit-order: 11;
     -ms-flex-order: 11;
     order: 11; }
 
   .f1 .col:nth-child(3) {
+    -moz-flex-order: 1;
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1; }
 
   .f1 .col:nth-child(4) {
+    -moz-flex-order: 2;
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2; }
 
   .f1 .col:nth-child(5) {
+    -moz-flex-order: 4;
     -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4; }
 
   .f1 .col:nth-child(6) {
+    -moz-flex-order: 3;
     -webkit-order: 3;
     -ms-flex-order: 3;
     order: 3; }
 
   .f1 .col:nth-child(7) {
+    -moz-flex-order: 5;
     -webkit-order: 5;
     -ms-flex-order: 5;
     order: 5; }
 
   .f1 .col:nth-child(8) {
+    -moz-flex-order: 6;
     -webkit-order: 6;
     -ms-flex-order: 6;
     order: 6; }
@@ -420,16 +428,19 @@ label {
   .f1 .col:nth-child(9) {
     background-color: #ffff66;
     color: #404040;
+    -moz-flex-order: 8;
     -webkit-order: 8;
     -ms-flex-order: 8;
     order: 8; }
 
   .f1 .col:nth-child(10) {
+    -moz-flex-order: 7;
     -webkit-order: 7;
     -ms-flex-order: 7;
     order: 7; }
 
   .f1 .col:nth-child(11) {
+    -moz-flex-order: 9;
     -webkit-order: 9;
     -ms-flex-order: 9;
     order: 9; }
@@ -437,8 +448,9 @@ label {
   .f1 .col:nth-child(12) {
     background-color: #404040;
     color: #e6e6e6;
-    -webkit-order: 11;
-    -ms-flex-order: 11;
+    -moz-flex-order: 10;
+    -webkit-order: 10;
+    -ms-flex-order: 10;
     order: 10; } }
 @media screen and (max-width: 991px) {
   .disco {
@@ -449,5 +461,3 @@ label {
 @media screen and (max-width: 230px) {
   .disco {
     min-height: 135vw; } }
-img {
-  max-width: 100%; }

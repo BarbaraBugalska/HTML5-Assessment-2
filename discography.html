@@ -5,6 +5,10 @@
 		Date: 2015/04/19
 		Ref: http://getbootstrap.com/components/#nav
 		Ref: http://nnattawat.github.io/flip/
+		http://api.jquery.com/toggle/
+	    https://api.jquery.com/click/
+	    http://api.jquery.com/css/
+	    http://api.jquery.com/fadein/
 -->
 <html lang="en">
 	<head>
@@ -478,20 +482,26 @@
 
 	    $(document).ready(function(){
 	    	//----content page fade in slowly
+	    	//---http://api.jquery.com/fadein/
 	    	$("#page").fadeIn("slow");
 	    	//----------------------
 	    	
+	    	//---flip album image over
+	    	//---http://nnattawat.github.io/flip/
 	    	$(".album").flip();
 
 	    	// ---- Animate effect for dropdown menu
+	    	//---https://api.jquery.com/click/
 	      $(".dropdown-toggle").click(function(){
-	       
+	        //---http://api.jquery.com/css/
 	        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
 	        {
+	        	//---http://api.jquery.com/toggle/
 	          $(".dropdown-menu").toggle( 400 );
 	        }
 	       });
 	    });
 	     </script>
+
 	</body>
 </html>

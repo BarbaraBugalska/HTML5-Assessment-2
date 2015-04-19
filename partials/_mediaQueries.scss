@@ -4,8 +4,11 @@
 		Date: 2015/04/19
 		Ref: http://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 */
+
+
 @media screen and (max-width: 769px){
 
+//-----dropdown menu color and backgroud color
 .navbar-default .navbar-nav .open .dropdown-menu{
 	background-color: darken($brand-color,20%);
 	li a {
@@ -19,86 +22,63 @@
 
 }
 
+//----------
+
 
 @media screen and (max-width: 1000px){
 
-
+//---profile page flexboxes font color, backgroun color and order
 .flexbox .col{
 	flex: 0 0 100%;
 }
 .f1 .col:nth-child(1) { 
-  	-webkit-order: 0; 
-    -ms-flex-order: 0; 
-     order: 0;
+  	 @include flex(0);
 }
 .f1 .col:nth-child(2) { 
-  -webkit-order: 11;
-      -ms-flex-order: 11;
-          order: 11;
+  @include flex(11);
 }
 
 .f1 .col:nth-child(3) { 
-  	-webkit-order: 1; 
-    -ms-flex-order: 1; 
-     order: 1;
+  	 @include flex(1);
 
 }
 .f1 .col:nth-child(4) { 
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
+   @include flex(2);
 }
 .f1 .col:nth-child(5) { 
-  	-webkit-order: 4; 
-    -ms-flex-order: 4; 
-     order: 4;
-
+  	 @include flex(4);
 }
 .f1 .col:nth-child(6) { 
-  -webkit-order: 3;
-      -ms-flex-order: 3;
-          order: 3;
+   @include flex(3);
 }
 .f1 .col:nth-child(7) { 
-  	-webkit-order: 5; 
-    -ms-flex-order: 5; 
-     order: 5;
-
+  	 @include flex(5);
 }
 .f1 .col:nth-child(8) { 
-  -webkit-order: 6;
-      -ms-flex-order: 6;
-          order: 6;
+   @include flex(6);
 }
 .f1 .col:nth-child(9) { 
 	background-color: $brand-yellow;
 	color: darken($brand-color, 35%);
-  	-webkit-order: 8; 
-    -ms-flex-order: 8; 
-     order: 8;
+   @include flex(8);
 
 }
 .f1 .col:nth-child(10) { 
-  -webkit-order: 7;
-      -ms-flex-order: 7;
-          order: 7;
+ @include flex(7);
 }
 
 .f1 .col:nth-child(11) { 
-  	-webkit-order: 9; 
-    -ms-flex-order: 9; 
-     order: 9;
-
+  	 @include flex(9);
 }
 .f1 .col:nth-child(12) { 
 	background-color: darken($brand-color, 35%);
 	color: lighten($brand-color, 30%);
-  -webkit-order: 11;
-      -ms-flex-order: 11;
-          order: 10;
+   @include flex(10);
 }
 
 }
+//--------
+
 //bug fix: Flip content disapearing on smaller screen size
 @media screen and (max-width: 991px){
 .disco { min-height: 470px; }
@@ -111,3 +91,4 @@
 @media screen and (max-width: 230px){
 .disco { min-height: 135vw; }
 }
+//--------

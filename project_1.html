@@ -6,7 +6,12 @@
 		Ref: http://www.w3schools.com/html/html_links.asp
 		http://www.google.com/fonts
 		http://getbootstrap.com/components/#nav
-		
+		http://getbootstrap.com/components/#thumbnails
+		http://api.jquery.com/toggle/
+	    https://api.jquery.com/click/
+	    http://api.jquery.com/css/
+	    http://api.jquery.com/fadein/
+			
 -->
 <html lang="en">
 	<head>
@@ -16,7 +21,7 @@
 
 	 	<title>Tomasz Stanko New York Quartet</title>
 	 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	 	<!--<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>-->
+	 	
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.css" rel="stylesheet">
     	<script src="js/bootstrap.js"></script>
@@ -136,21 +141,23 @@
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="js/bootstrap.min.js"></script>
 	    <script>
-	    $(document).ready(function(){
-	      
-	      // ---- Animate effect for dropdown menu
-	      $(".dropdown-toggle").click(function(){
-	       
-	        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
-	        {
-	          $(".dropdown-menu").toggle( 400 );
-	        }
-	       });
-	      //---------------------
-	      //----content page fade in slowly
-	       $("#page").fadeIn("slow");
-	       //--------------------
-	    });
-	    </script>
+    $(document).ready(function(){
+      
+      // ---- Animate effect for dropdown menu
+      //---https://api.jquery.com/click/
+      $(".dropdown-toggle").click(function(){
+       //---http://api.jquery.com/css/
+        if($(".navbar-toggle").css("display") === "none")  // disable on mobile
+        {
+          //---http://api.jquery.com/toggle/
+          $(".dropdown-menu").toggle( 400 );
+        }
+       });
+      //---------------------
+
+      //---http://api.jquery.com/fadein/
+      $("#page").fadeIn("slow");
+    });
+     </script>
 	</body>
 </html>

@@ -6,6 +6,10 @@
     Ref: http://getbootstrap.com/components/#nav
     http://www.idangero.us/swiper/
     http://www.idangero.us/swiper/api/#.VTOtVSFVhHx
+    http://api.jquery.com/toggle/
+    https://api.jquery.com/click/
+    http://api.jquery.com/css/
+    http://api.jquery.com/fadein/
 -->
 <html lang="en">
   <head>
@@ -187,8 +191,7 @@
           var galleryTop = new Swiper('.gallery-top', {
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
-          // loop: true
-          //spaceBetween: 10,
+         
       });
 
       var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -197,7 +200,7 @@
           slidesPerView: 'auto',
           touchRatio: 0.2,
           
-         // slideToClickedSlide: true
+        
       });
       galleryTop.params.control = galleryThumbs;
       galleryThumbs.params.control = galleryTop;
@@ -208,6 +211,7 @@
     $(document).ready(function(){
        
        //----content page fade in slowly
+       //---http://api.jquery.com/fadein/
         $("#page").fadeIn("slow");
         //-------------------
 
@@ -215,15 +219,14 @@
       
       // ---- Animate effect for dropdown menu
       $(".dropdown-toggle").click(function(){
-      
+        //---http://api.jquery.com/css/
       if($(".navbar-toggle").css("display") === "none")  // diable on mobile
         {
+          //---http://api.jquery.com/toggle/
           $(".dropdown-menu").toggle( 400 );
         }
        });
-      //---------------------
-     
-      
+      //-------------------- 
        
       });
      </script>

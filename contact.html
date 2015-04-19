@@ -8,6 +8,10 @@
     https://css-tricks.com/snippets/html/open-link-in-a-new-window/
     http://www.w3schools.com/tags/att_form_action.asp
     http://fortawesome.github.io/Font-Awesome/icons/
+    http://api.jquery.com/toggle/
+    https://api.jquery.com/click/
+    http://api.jquery.com/css/
+    http://api.jquery.com/fadein/
 -->
 <html lang="en">
 	<head>
@@ -111,21 +115,23 @@
       <script src="js/bootstrap.min.js"></script>
 
       <script>
-      $(document).ready(function(){
-        
-        // ---- Animate effect for dropdown menu
-        $(".dropdown-toggle").click(function(){
-         
-          if($(".navbar-toggle").css("display") === "none")  // diable on mobile
-          {
-            $(".dropdown-menu").toggle( 400 );
-          }
-         });
-        //---------------------
-        //----content page fade in slowly
-         $("#page").fadeIn("slow");
-         //---------------------
-      });
-       </script>
+    $(document).ready(function(){
+      
+      // ---- Animate effect for dropdown menu
+      //---https://api.jquery.com/click/
+      $(".dropdown-toggle").click(function(){
+       //---http://api.jquery.com/css/
+        if($(".navbar-toggle").css("display") === "none")  // disable on mobile
+        {
+          //---http://api.jquery.com/toggle/
+          $(".dropdown-menu").toggle( 400 );
+        }
+       });
+      //---------------------
+
+      //---http://api.jquery.com/fadein/
+      $("#page").fadeIn("slow");
+    });
+     </script>
 	</body>
 </html>

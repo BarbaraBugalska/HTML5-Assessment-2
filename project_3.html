@@ -4,6 +4,10 @@
 		Student ID: D14126227
 		Date: 2015/04/19
 		Ref: http://getbootstrap.com/components/#nav
+		http://api.jquery.com/toggle/
+	    https://api.jquery.com/click/
+	    http://api.jquery.com/css/
+	    http://api.jquery.com/fadein/
 -->
 <html lang="en">
 	<head>
@@ -61,9 +65,8 @@
 			    </div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
-
-			
 			</header>
+
 				<div id="page">
 					<section>
 						<div>
@@ -129,22 +132,24 @@
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="js/bootstrap.min.js"></script>
 
-	    <script>
-	    $(document).ready(function(){
-	      
-	      // ---- Animate effect for dropdown menu
-	      $(".dropdown-toggle").click(function(){
-	       
-	        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
-	        {
-	          $(".dropdown-menu").toggle( 400 );
-	        }
-	       });
-	      //---------------------
-	      //----content page fade in slowly
-	       $("#page").fadeIn("slow");
-	       //-------------------
-	    });
-	    </script>
+	     <script>
+    $(document).ready(function(){
+      
+      // ---- Animate effect for dropdown menu
+      //---https://api.jquery.com/click/
+      $(".dropdown-toggle").click(function(){
+       //---http://api.jquery.com/css/
+        if($(".navbar-toggle").css("display") === "none")  // disable on mobile
+        {
+          //---http://api.jquery.com/toggle/
+          $(".dropdown-menu").toggle( 400 );
+        }
+       });
+      //---------------------
+
+      //---http://api.jquery.com/fadein/
+      $("#page").fadeIn("slow");
+    });
+     </script>
 	</body>
 </html>

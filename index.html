@@ -4,6 +4,11 @@
 		Student ID: D14126227
 		Date: 2015/04/19
 		Ref: http://getbootstrap.com/components/#nav
+    http://api.jquery.com/toggle/
+    https://api.jquery.com/click/
+    http://api.jquery.com/css/
+    http://api.jquery.com/fadein/
+
 -->
 <html lang="en">
 	<head>
@@ -12,10 +17,10 @@
 	 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	 	<title>Home</title>
-	
+	 <!--Google fonts link -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     
-	 	<!--<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>-->
+	 	
 		<!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="js/bootstrap.js"></script>
@@ -102,14 +107,18 @@
     $(document).ready(function(){
       
       // ---- Animate effect for dropdown menu
+      //---https://api.jquery.com/click/
       $(".dropdown-toggle").click(function(){
-       
-        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
+       //---http://api.jquery.com/css/
+        if($(".navbar-toggle").css("display") === "none")  // disable on mobile
         {
+          //---http://api.jquery.com/toggle/
           $(".dropdown-menu").toggle( 400 );
         }
        });
       //---------------------
+
+      //---http://api.jquery.com/fadein/
       $("#page").fadeIn("slow");
     });
      </script>

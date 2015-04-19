@@ -21,15 +21,16 @@ label {
 	border-radius: 0;
 	&:focus {
 		border-color: $brand-color;
-		  box-shadow: 0 0 5px rgba(255, 255, 51, 1);
+		box-shadow: 0 0 5px rgba(255, 255, 51, 1);
 }
 }
 
-.btn, .contactButton {
+.contactButton {
 	font-weight: bold;
 	padding: 6px 30px;
+	background-color: $brand-yellow;
 	&:hover{
-		background-color: $brand-yellow;
+		background-color: darken($brand-yellow, 20%);
 	}
 	&:focus{
 		border-color: $brand-color;
