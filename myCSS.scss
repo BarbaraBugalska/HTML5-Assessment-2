@@ -13,9 +13,13 @@ $brand-yellow:#ffff66;
 
 //fonts
 body{
-    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Open Sans', sans-serif;
     // font-family: Helvetica, sans-serif;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
     background: $brand-color;
+}
+nav, footer{
+    font-family: 'Droid Serif', Georgia, Times, serif;
 }
 
 //mixins

@@ -5,8 +5,11 @@
 		Ref: 
 */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
   background: #999999; }
+
+nav, footer {
+  font-family: 'Droid Serif', Georgia, Times, serif; }
 
 img {
   max-width: 100%; }
