@@ -5,13 +5,16 @@
 		Ref: 
 */
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background: #999999; }
 
 img {
   max-width: 100%; }
 
 #page {
-  display: none; }
+  display: none;
+  background: white;
+  padding-top: 20px; }
 
 /* 	Author: Barbara Bugalska
 		Assignment: WI.2.HTML Assignment, digital Skills Academy
@@ -20,7 +23,8 @@ img {
 		Ref: http://getbootstrap.com/components/#nav
 */
 .navbar-default {
-  background-color: #999999; }
+  background-color: #999999;
+  margin-bottom: 0; }
 
 .navbar-default .navbar-nav > li > a {
   color: #e6e6e6; }
@@ -97,9 +101,6 @@ footer {
   .right .rightH h3 {
     margin-bottom: 5px;
     color: gray; }
-
-#home {
-  margin-bottom: 170px; }
 
 .discography {
   margin-top: 10px;

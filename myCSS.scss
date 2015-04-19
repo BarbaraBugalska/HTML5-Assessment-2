@@ -15,6 +15,7 @@ $brand-yellow:#ffff66;
 body{
     font-family: 'Open Sans', sans-serif;
     // font-family: Helvetica, sans-serif;
+    background: $brand-color;
 }
 
 //mixins
@@ -31,6 +32,8 @@ img{
 //-----
 #page {
   display: none;
+  background: white;
+  padding-top: 20px;
 }
 
 //Partials
