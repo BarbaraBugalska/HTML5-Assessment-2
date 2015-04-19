@@ -17,7 +17,7 @@
 	 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap -->
     	<link href="css/bootstrap.css" rel="stylesheet">
-    	<script src="js/bootstrap.js"></script>
+    	
 
     	<!--link to myCss-->
     	<link rel="stylesheet" type="text/css" href="myCSS.css">
@@ -499,12 +499,23 @@
 	<!-- A jQuery plugin to flip content with 3D animation -->
     <script src="js/jquery.flip.min.js"></script>
     <script>
+
     $(document).ready(function(){
     	$(".album").flip();
-    });
-    </script>
-    
 
+    	// ---- Animate effect for dropdown menu
+      $(".dropdown-toggle").click(function(){
+       
+        if($(".navbar-toggle").css("display") === "none")  // diable on mobile
+        {
+          $(".dropdown-menu").toggle( 400 );
+        }
+       });
+      //---------------------
+    });
+     </script>
+    
+  
 
 
 	</body>
