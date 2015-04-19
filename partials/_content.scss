@@ -192,63 +192,31 @@ p {
 		font-weight: 600;
 		padding-bottom: 20px
 	}
-	.glyphicon {
+	.glyphicon, .fa-users{
 		font-size: 30px;
 		color: darken($brand-color, 20%);
 		padding-bottom: 20px;
+    padding-top: 20px;
 
 }
+  .fa-spotify, .fa-youtube-square, .fa-facebook-official, .fa-twitter-square{
+    font-size: 40px;
+    color: $brand-color;
+    padding: 10px;
+    &:hover{
+      color: $brand-yellow;
+      background-color: $brand-color;
+    }
+  }
 }
 .KeepInTouch {
 	padding: 10px 10% 20px 10%;
+  background-color: lighten($brand-color, 35%);
 }
 .Listen {
 
-	
-}
-/*.BeSocial{
-padding-right: 25px;
-}
-.Listen{
-padding-left: 25px;
-}*/ 
-/*.contact{
-	display: flex;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-
-	flex-direction:row wrap;
-	justify-content: space-around;
-	align-items:flex-strech;
-
-	flex-wrap:wrap;
-
-
-	margin: 10px;
-	border: 1px solid #888;
-	height:500px;
-
-
-div {
-	text-align: center;
-	border-radius: 2px;
-	border: 1px solid #555;
-	padding: 20px;
-	flex: flex-shrink;
-}
-.listen {
-	flex:1;
 
 }
-.keepInTOuch{
-	flex:2;
-}
-.BeSocial{
-	flex:1;
-}
-}
-
-*/
 
 
 

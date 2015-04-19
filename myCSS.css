@@ -195,57 +195,23 @@ footer {
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px; }
-  .contact .glyphicon {
+  .contact .glyphicon, .contact .fa-users {
     font-size: 30px;
     color: #666666;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .contact .fa-spotify, .contact .fa-youtube-square, .contact .fa-facebook-official, .contact .fa-twitter-square {
+    font-size: 40px;
+    color: #999999;
+    padding: 10px; }
+    .contact .fa-spotify:hover, .contact .fa-youtube-square:hover, .contact .fa-facebook-official:hover, .contact .fa-twitter-square:hover {
+      color: #ffff66;
+      background-color: #999999; }
 
 .KeepInTouch {
-  padding: 10px 10% 20px 10%; }
+  padding: 10px 10% 20px 10%;
+  background-color: #f2f2f2; }
 
-/*.BeSocial{
-padding-right: 25px;
-}
-.Listen{
-padding-left: 25px;
-}*/
-/*.contact{
-	display: flex;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-
-	flex-direction:row wrap;
-	justify-content: space-around;
-	align-items:flex-strech;
-
-	flex-wrap:wrap;
-
-
-	margin: 10px;
-	border: 1px solid #888;
-	height:500px;
-
-
-div {
-	text-align: center;
-	border-radius: 2px;
-	border: 1px solid #555;
-	padding: 20px;
-	flex: flex-shrink;
-}
-.listen {
-	flex:1;
-
-}
-.keepInTOuch{
-	flex:2;
-}
-.BeSocial{
-	flex:1;
-}
-}
-
-*/
 /*font-family: 'Open Sans Condensed', sans-serif;*/
 .flexbox {
   display: -webkit-flex;
