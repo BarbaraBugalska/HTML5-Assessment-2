@@ -120,6 +120,12 @@ footer {
     margin-bottom: 0; }
   .discography p {
     margin-bottom: 1px; }
+  .discography .front {
+    width: 100% !important;
+    height: 100% !important; }
+  .discography .disco {
+    overflow: visible;
+    height: 100%; }
   .discography .thumbnail img {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -167,9 +173,15 @@ footer {
         margin: 0 auto; }
 
 .gallery-thumbs {
-  height: 20%;
   box-sizing: border-box;
-  padding: 10px 0; }
+  padding: 10px 0;
+  max-width: 100%;
+  max-height: 80%;
+  height: auto; }
+  .gallery-thumbs img {
+    height: 50%;
+    width: auto;
+    margin: 0 auto; }
   .gallery-thumbs .swiper-wrapper {
     max-height: 100%; }
   .gallery-thumbs .swiper-slide {
@@ -465,5 +477,14 @@ label {
     -webkit-order: 11;
     -ms-flex-order: 11;
     order: 10; } }
+@media screen and (max-width: 991px) {
+  .disco {
+    min-height: 511px; } }
+@media screen and (max-width: 415px) {
+  .disco {
+    min-height: 125vw; } }
+@media screen and (max-width: 230px) {
+  .disco {
+    min-height: 135vw; } }
 img {
   max-width: 100%; }
