@@ -20,7 +20,7 @@
 
   .rightP {
     padding: 20px 0 0 40px;
-    color: $brand-color;
+    color: lighten($brand-color, 30%);
     
   }
   .rightH {
@@ -30,18 +30,20 @@
   
   h1 {
     font-size: 40px;
-    color:darken($brand-color, 30%);
+    color:$brand-yellow;
     margin-top: 5px;
 
   }
   h3{
   margin-bottom: 5px;
-   color: darken($brand-color, 10%);
+   color: lighten($brand-color, 20%);
   }
 }
 }
 #home{
   margin-bottom: 170px;
+  background-color: darken($brand-color, 40%);
+
 }
 
 //discography page
