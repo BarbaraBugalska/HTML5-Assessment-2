@@ -4,6 +4,7 @@
 		Student ID: D14126227
 		Date: 2015/04/19
 		Ref: http://getbootstrap.com/components/#nav
+		Ref: http://nnattawat.github.io/flip/
 -->
 <html lang="en">
 	<head>
@@ -69,24 +70,40 @@
 
 		<div class="discography">
 			<div class="row">
-			  <div class=" col-sm-6 col-md-3">
-			    <div class="thumbnail">
-			      <img src="img/discography/Dark_Eyes_color.jpg" alt="Cd cover">
-			      <div class="caption">
-			        <p>Tomasz Stańko Quintet</p>
-			        <h4>Dark Eyes</h4>
-			      </div>
-			    </div>
+			  <div class="col-sm-6 col-md-3 disco">
+			  	<div class="album">
+			  		<div class="front">
+					    <div class="thumbnail">
+					      <img src="img/discography/Dark_Eyes_color.jpg" alt="Cd cover">
+					      <div class="caption">
+					        <p>Tomasz Stańko Quintet</p>
+					        <h4>Dark Eyes</h4>
+					      </div>
+					    </div>
+					</div>
+				    <div class="back">
+						<h4> Back Side </h4>
+
+				    </div>
+				</div>
 			  </div>
-			  <div class=" col-sm-6 col-md-3">
-			    <div class="thumbnail">
-			      <img src="img/discography/lontano_color.jpg" alt="Cd cover">
-			      <div class="caption">
-			        <p>Tomasz Stańko Quartet</p>
-			        <h4>Lontano</h4>
-			      </div>
-			    </div>
-			  </div>
+
+			<div class="col-sm-6 col-md-3 disco">
+			  	<div class="album">
+					<div class="front">
+				    	<div class="thumbnail">
+				      		<img src="img/discography/lontano_color.jpg" alt="Cd cover">
+				      		<div class="caption">
+						        <p>Tomasz Stańko Quartet</p>
+						        <h4>Lontano</h4>
+						    </div>
+				    	</div>
+				    </div>
+				    <div class="back">
+						<h4> Back Side </h4>
+				    </div>
+				</div>
+			</div>
 			  <div class=" col-sm-6 col-md-3">
 			    <div class="thumbnail">
 			      <img src="img/discography/freedom_in_August_color.jpg" alt="Cd cover">
@@ -432,10 +449,22 @@
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+	<!-- A jQuery plugin to flip content with 3D animation -->
+    <script src="js/jquery.flip.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    	$(".album").flip();
+    });
+    </script>
+    
+
+
 
 	</body>
 </html>
