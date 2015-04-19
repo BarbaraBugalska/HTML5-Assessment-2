@@ -12,6 +12,9 @@
 		http://demosthenes.info/blog/532/Convert-Images-To-Black-And-White-With-CSS
 */
 //home page
+body {
+  display: none;
+}
 .right {
 	text-align: right;
 	padding: 10% 10% 0 0;
